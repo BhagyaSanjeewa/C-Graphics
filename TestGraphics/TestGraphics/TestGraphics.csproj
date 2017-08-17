@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E118EE0-CA61-4280-960B-3C9DF7566E7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestGraphics</RootNamespace>
+    <AssemblyName>TestGraphics</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonMethods.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Execute.cs" />
+    <Compile Include="frmAddEditPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditPlan.Designer.cs">
+      <DependentUpon>frmAddEditPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditPlansNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditPlansNew.Designer.cs">
+      <DependentUpon>frmAddEditPlansNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditPlans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditPlans.Designer.cs">
+      <DependentUpon>frmEditPlans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlConn.cs" />
+    <Compile Include="dbGraphicsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbGraphicsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddData.Designer.cs">
+      <DependentUpon>frmAddData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainGraphic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainGraphic.Designer.cs">
+      <DependentUpon>frmMainGraphic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicalPlan.cs" />
+    <Compile Include="GraphicMahcineBar.cs" />
+    <Compile Include="Horizontal.cs" />
+    <Compile Include="InterruptionInGrahic.cs" />
+    <Compile Include="Machine.cs" />
+    <Compile Include="MachineBar.cs" />
+    <Compile Include="Plan.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucAddEditPlansNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddEditPlansNew.Designer.cs">
+      <DependentUpon>ucAddEditPlansNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddNewPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddNewPlan.Designer.cs">
+      <DependentUpon>ucAddNewPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucGraphicMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucGraphicMain.Designer.cs">
+      <DependentUpon>ucGraphicMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucGraphicNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucGraphicNew.Designer.cs">
+      <DependentUpon>ucGraphicNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vertical.cs" />
+    <EmbeddedResource Include="frmAddData.resx">
+      <DependentUpon>frmAddData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditPlan.resx">
+      <DependentUpon>frmAddEditPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditPlansNew.resx">
+      <DependentUpon>frmAddEditPlansNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditPlans.resx">
+      <DependentUpon>frmEditPlans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainGraphic.resx">
+      <DependentUpon>frmMainGraphic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucAddEditPlansNew.resx">
+      <DependentUpon>ucAddEditPlansNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddNewPlan.resx">
+      <DependentUpon>ucAddNewPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGraphicMain.resx">
+      <DependentUpon>ucGraphicMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGraphicNew.resx">
+      <DependentUpon>ucGraphicNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="dbGraphicsDataSet.xsc">
+      <DependentUpon>dbGraphicsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbGraphicsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbGraphicsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbGraphicsDataSet.xss">
+      <DependentUpon>dbGraphicsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbGraphics.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbGraphics_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>dbGraphics.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Connection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
